@@ -1,0 +1,6 @@
+path	@id	schema
+/type	@type	/github/workspace/build/annotated/api/common/part1/schemas/exception/schema.yaml
+/title	http://purl.org/dc/terms/title	/github/workspace/build/annotated/api/common/part1/schemas/exception/schema.yaml
+/status	http://www.w3.org/2011/http#statusCodeNumber	/github/workspace/build/annotated/api/common/part1/schemas/exception/schema.yaml
+/detail	http://purl.org/dc/terms/description	/github/workspace/build/annotated/api/common/part1/schemas/exception/schema.yaml
+/instance	@id	/github/workspace/build/annotated/api/common/part1/schemas/exception/schema.yaml

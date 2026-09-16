@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueDouble - Double query parameter value",
   "bblockName": "Double query parameter value",
   "bblockId": "ogc.api.common.part1.schemas.queryParamValueDouble",
-  "generated": "2026-09-16T11:26:27.572293+00:00",
+  "generated": "2026-09-16T11:35:16.599484+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

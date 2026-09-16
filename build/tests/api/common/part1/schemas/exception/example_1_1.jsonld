@@ -1,0 +1,7 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/context.jsonld",
+  "type": "http://www.opengis.net/def/exceptions/ogcapi-common-1/1.0/no-such-resource",
+  "title": "Resource not found",
+  "status": 404,
+  "detail": "The requested collection does not exist on this server."
+}

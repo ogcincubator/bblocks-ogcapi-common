@@ -11,11 +11,13 @@
       "type": "string",
       "title": "The title of the API.",
       "description": "While a title is not required, implementers are strongly advised to include one.",
-      "example": "Buildings in Bonn"
+      "example": "Buildings in Bonn",
+      "x-jsonld-id": "http://purl.org/dc/terms/title"
     },
     "description": {
       "type": "string",
-      "example": "Access to data about buildings in the city of Bonn via a Web API that conforms to the OGC API Common specification."
+      "example": "Access to data about buildings in the city of Bonn via a Web API that conforms to the OGC API Common specification.",
+      "x-jsonld-id": "http://purl.org/dc/terms/description"
     },
     "attribution": {
       "type": "string",
@@ -28,5 +30,8 @@
         "$ref": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/schema.json"
       }
     }
+  },
+  "x-jsonld-prefixes": {
+    "dct": "http://purl.org/dc/terms/"
   }
 }

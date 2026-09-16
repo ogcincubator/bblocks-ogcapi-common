@@ -1,0 +1,5 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+
+[] dct:description "Access to data about buildings in the city of Bonn via a Web API that conforms to the OGC API Common specification." ;
+    dct:title "Buildings in Bonn" .
+

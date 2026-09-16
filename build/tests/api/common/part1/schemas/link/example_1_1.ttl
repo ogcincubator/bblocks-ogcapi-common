@@ -1,0 +1,10 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+[] rdfs:label "This document as GeoJSON" ;
+    dct:type "application/geo+json" ;
+    ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
+    oa:hasTarget <http://data.example.com/buildings/123.json> .
+

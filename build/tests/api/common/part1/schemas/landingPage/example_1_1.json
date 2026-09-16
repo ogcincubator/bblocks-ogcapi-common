@@ -1,0 +1,24 @@
+{
+  "title": "Buildings in Bonn",
+  "description": "Access to data about buildings in the city of Bonn via a Web API that conforms to the OGC API Common specification.",
+  "links": [
+    {
+      "href": "http://data.example.org/",
+      "rel": "self",
+      "type": "application/json",
+      "title": "This document"
+    },
+    {
+      "href": "http://data.example.org/api",
+      "rel": "service-desc",
+      "type": "application/vnd.oai.openapi+json;version=3.0",
+      "title": "The API definition"
+    },
+    {
+      "href": "http://data.example.org/conformance",
+      "rel": "http://www.opengis.net/def/rel/ogc/1.0/conformance",
+      "type": "application/json",
+      "title": "OGC API conformance classes implemented by this server"
+    }
+  ]
+}

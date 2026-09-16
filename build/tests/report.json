@@ -10,13 +10,69 @@
       "title": "Validation report for ogc.api.common.part1.schemas.confClasses - Conformance Classes schema",
       "bblockName": "Conformance Classes schema",
       "bblockId": "ogc.api.common.part1.schemas.confClasses",
-      "generated": "2026-09-16T11:26:27.546790+00:00",
+      "generated": "2026-09-16T11:35:16.565537+00:00",
       "result": true,
-      "items": [],
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/api/common/part1/schemas/confClasses/example_1_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/tests/api/common/part1/schemas/confClasses/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 5,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "globalErrors": {},
       "counts": {
-        "total": 0,
-        "passed": 0,
+        "total": 1,
+        "passed": 1,
         "failed": 0
       }
     },
@@ -24,13 +80,69 @@
       "title": "Validation report for ogc.api.common.part1.schemas.exception - Exception schema",
       "bblockName": "Exception schema",
       "bblockId": "ogc.api.common.part1.schemas.exception",
-      "generated": "2026-09-16T11:26:27.552864+00:00",
+      "generated": "2026-09-16T11:35:16.574777+00:00",
       "result": true,
-      "items": [],
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/api/common/part1/schemas/exception/example_1_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/tests/api/common/part1/schemas/exception/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "globalErrors": {},
       "counts": {
-        "total": 0,
-        "passed": 0,
+        "total": 1,
+        "passed": 1,
         "failed": 0
       }
     },
@@ -38,13 +150,69 @@
       "title": "Validation report for ogc.api.common.part1.schemas.link - Link schema",
       "bblockName": "Link schema",
       "bblockId": "ogc.api.common.part1.schemas.link",
-      "generated": "2026-09-16T11:26:27.558971+00:00",
+      "generated": "2026-09-16T11:35:16.584536+00:00",
       "result": true,
-      "items": [],
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/api/common/part1/schemas/link/example_1_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/tests/api/common/part1/schemas/link/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "globalErrors": {},
       "counts": {
-        "total": 0,
-        "passed": 0,
+        "total": 1,
+        "passed": 1,
         "failed": 0
       }
     },
@@ -52,7 +220,7 @@
       "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueBoolean - Boolean query parameter value",
       "bblockName": "Boolean query parameter value",
       "bblockId": "ogc.api.common.part1.schemas.queryParamValueBoolean",
-      "generated": "2026-09-16T11:26:27.563410+00:00",
+      "generated": "2026-09-16T11:35:16.590086+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -66,7 +234,7 @@
       "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueDecimal - Decimal query parameter value",
       "bblockName": "Decimal query parameter value",
       "bblockId": "ogc.api.common.part1.schemas.queryParamValueDecimal",
-      "generated": "2026-09-16T11:26:27.567845+00:00",
+      "generated": "2026-09-16T11:35:16.594868+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -80,7 +248,7 @@
       "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueDouble - Double query parameter value",
       "bblockName": "Double query parameter value",
       "bblockId": "ogc.api.common.part1.schemas.queryParamValueDouble",
-      "generated": "2026-09-16T11:26:27.572293+00:00",
+      "generated": "2026-09-16T11:35:16.599484+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -94,7 +262,7 @@
       "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueInteger - Integer query parameter value",
       "bblockName": "Integer query parameter value",
       "bblockId": "ogc.api.common.part1.schemas.queryParamValueInteger",
-      "generated": "2026-09-16T11:26:27.576678+00:00",
+      "generated": "2026-09-16T11:35:16.604284+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -108,7 +276,7 @@
       "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueList - Delimited list query parameter value",
       "bblockName": "Delimited list query parameter value",
       "bblockId": "ogc.api.common.part1.schemas.queryParamValueList",
-      "generated": "2026-09-16T11:26:27.581468+00:00",
+      "generated": "2026-09-16T11:35:16.609111+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -122,7 +290,7 @@
       "title": "Validation report for ogc.api.common.part1.responses.ConformanceDeclaration - ConformanceDeclaration response",
       "bblockName": "ConformanceDeclaration response",
       "bblockId": "ogc.api.common.part1.responses.ConformanceDeclaration",
-      "generated": "2026-09-16T11:26:27.585727+00:00",
+      "generated": "2026-09-16T11:35:16.613574+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -136,7 +304,7 @@
       "title": "Validation report for ogc.api.common.part1.responses.Exception - Exception response",
       "bblockName": "Exception response",
       "bblockId": "ogc.api.common.part1.responses.Exception",
-      "generated": "2026-09-16T11:26:27.589834+00:00",
+      "generated": "2026-09-16T11:35:16.617843+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -150,13 +318,69 @@
       "title": "Validation report for ogc.api.common.part1.schemas.landingPage - Landing Page schema",
       "bblockName": "Landing Page schema",
       "bblockId": "ogc.api.common.part1.schemas.landingPage",
-      "generated": "2026-09-16T11:26:27.596065+00:00",
+      "generated": "2026-09-16T11:35:16.627174+00:00",
       "result": true,
-      "items": [],
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/api/common/part1/schemas/landingPage/example_1_1.json",
+            "url": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/tests/api/common/part1/schemas/landingPage/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 2,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "globalErrors": {},
       "counts": {
-        "total": 0,
-        "passed": 0,
+        "total": 1,
+        "passed": 1,
         "failed": 0
       }
     },
@@ -164,7 +388,7 @@
       "title": "Validation report for ogc.api.common.part1.paths.Conformance - Conformance path",
       "bblockName": "Conformance path",
       "bblockId": "ogc.api.common.part1.paths.Conformance",
-      "generated": "2026-09-16T11:26:27.599227+00:00",
+      "generated": "2026-09-16T11:35:16.631316+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -178,7 +402,7 @@
       "title": "Validation report for ogc.api.common.part1.responses.LandingPage - LandingPage response",
       "bblockName": "LandingPage response",
       "bblockId": "ogc.api.common.part1.responses.LandingPage",
-      "generated": "2026-09-16T11:26:27.603366+00:00",
+      "generated": "2026-09-16T11:35:16.635583+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -192,7 +416,7 @@
       "title": "Validation report for ogc.api.common.part1.paths.LandingPage - LandingPage path",
       "bblockName": "LandingPage path",
       "bblockId": "ogc.api.common.part1.paths.LandingPage",
-      "generated": "2026-09-16T11:26:27.606423+00:00",
+      "generated": "2026-09-16T11:35:16.638817+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},

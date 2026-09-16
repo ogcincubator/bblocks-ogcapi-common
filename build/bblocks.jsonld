@@ -204,7 +204,7 @@
   "name": "Building Blocks - OGC API Common",
   "abstract": "Building blocks for OGC API - Common.\n",
   "description": "OGC API - Common is a multi-part standard that documents the set of common practices and \nshared requirements that have emerged from the development of Resource Oriented Architectures \nand Web APIs within the OGC. Standards developers will use these building-blocks in the \nconstruction of other OGC Standards that relate to Web APIs. The result is a modular suite \nof coherent API standards which can be adapted by a system designer for the unique requirements \nof their system. As such, this OGC API Standard serves as the \"OWS Common\" standard for \nresource-oriented OGC APIs. \n\nConsistent with the architecture of the Web, this specification uses a resource architecture \nthat conforms to principles of Representational State Transfer (REST).\n\nThis OGC API Standard establishes a common pattern that is based on OpenAPI. \n",
-  "modified": "2026-09-16T11:26:22.711537",
+  "modified": "2026-09-16T11:35:10.860774",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"e9e9cb5c905d4e569b44b4816a663ec450322f6f",
@@ -282,12 +282,20 @@
       ],
       "abstract": "This building block corresponds to the schema for an OGC API Common confClasses",
       "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/confClasses/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/confClasses/remote_cache/",
       "dateOfLastChange": "2025-10-23",
       "sourceSchema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/confClasses.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/confClasses/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/confClasses/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/confClasses/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-common/blob/master/build/tests/api/common/part1/schemas/confClasses/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -310,7 +318,6 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Conformance Classes schema",
-      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
@@ -353,12 +360,20 @@
       ],
       "abstract": "This building block corresponds to the schema for an OGC API Common exception",
       "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/remote_cache/",
       "dateOfLastChange": "2025-10-23",
       "sourceSchema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/exception.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/exception/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/exception/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-common/blob/master/build/tests/api/common/part1/schemas/exception/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -381,7 +396,6 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Exception schema",
-      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
@@ -423,13 +437,24 @@
         }
       ],
       "abstract": "This building block corresponds to the schema for an OGC API Common link",
+      "seeAlso": [
+        "bblocks://ogc.ogc-utils.json-link"
+      ],
       "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/remote_cache/",
       "dateOfLastChange": "2025-10-23",
       "sourceSchema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/link.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/link/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/link/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-common/blob/master/build/tests/api/common/part1/schemas/link/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -452,7 +477,6 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Link schema",
-      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
@@ -983,6 +1007,12 @@
       "dependsOn": [
         "bblocks://ogc.api.common.part1.schemas.link"
       ],
+      "ldContext": {
+        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/landingPage/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "dateOfLastChange": "2025-10-23",
       "schema": [
         {
@@ -999,9 +1029,11 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/landingPage/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/landingPage/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/landingPage/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/landingPage/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ogcapi-common/blob/master/build/tests/api/common/part1/schemas/landingPage/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -1024,7 +1056,6 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Landing Page schema",
-      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],

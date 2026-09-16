@@ -1,0 +1,6 @@
+{
+  "href": "http://data.example.com/buildings/123.json",
+  "rel": "alternate",
+  "type": "application/geo+json",
+  "title": "This document as GeoJSON"
+}

@@ -1,0 +1,7 @@
+path	@id	schema
+/href	http://www.w3.org/ns/oa#hasTarget	/github/workspace/build/annotated/api/common/part1/schemas/link/schema.yaml
+/rel	http://www.iana.org/assignments/relation	/github/workspace/build/annotated/api/common/part1/schemas/link/schema.yaml
+/type	http://purl.org/dc/terms/type	/github/workspace/build/annotated/api/common/part1/schemas/link/schema.yaml
+/hreflang	http://purl.org/dc/terms/language	/github/workspace/build/annotated/api/common/part1/schemas/link/schema.yaml
+/title	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/api/common/part1/schemas/link/schema.yaml
+/length	http://purl.org/dc/terms/extent	/github/workspace/build/annotated/api/common/part1/schemas/link/schema.yaml

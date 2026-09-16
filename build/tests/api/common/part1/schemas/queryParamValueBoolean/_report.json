@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueBoolean - Boolean query parameter value",
   "bblockName": "Boolean query parameter value",
   "bblockId": "ogc.api.common.part1.schemas.queryParamValueBoolean",
-  "generated": "2026-09-16T11:26:27.563410+00:00",
+  "generated": "2026-09-16T11:35:16.590086+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

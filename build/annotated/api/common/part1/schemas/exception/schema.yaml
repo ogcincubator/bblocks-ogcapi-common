@@ -6,11 +6,19 @@ required:
 properties:
   type:
     type: string
+    x-jsonld-id: '@type'
   title:
     type: string
+    x-jsonld-id: http://purl.org/dc/terms/title
   status:
     type: integer
+    x-jsonld-id: http://www.w3.org/2011/http#statusCodeNumber
   detail:
     type: string
+    x-jsonld-id: http://purl.org/dc/terms/description
   instance:
     type: string
+    x-jsonld-id: '@id'
+x-jsonld-prefixes:
+  dct: http://purl.org/dc/terms/
+  httpv: http://www.w3.org/2011/http#

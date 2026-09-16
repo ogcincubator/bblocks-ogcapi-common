@@ -1,0 +1,9 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix httpv: <http://www.w3.org/2011/http#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a <http://www.opengis.net/def/exceptions/ogcapi-common-1/1.0/no-such-resource> ;
+    dct:description "The requested collection does not exist on this server." ;
+    dct:title "Resource not found" ;
+    httpv:statusCodeNumber 404 .
+
