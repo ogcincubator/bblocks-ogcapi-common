@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.part1.schemas.confClasses",
+  "name": "Conformance Classes schema",
+  "status": "under-development",
+  "dateTimeAddition": "2025-10-23T22:40:00+01:00",
+  "itemClass": "schema",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common"
+  ],
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/schema.json"
+  },
+  "abstract": "This building block corresponds to the schema for an OGC API Common confClasses",
+  "shaclShapes": {},
+  "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/remote_cache/",
+  "dateOfLastChange": "2025-10-23",
+  "sourceSchema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/confClasses.yaml",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/confClasses/",
+  "validationPassed": true,
+  "annotatedSchema": "type: object\nrequired:\n- conformsTo\nproperties:\n  conformsTo:\n    type: array\n    items:\n      type: string\n      example: http://www.opengis.net/spec/ogcapi-common-1/1.0/conf/core\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-common",
+  "gitPath": "_sources/part1/schemas/confClasses"
+}

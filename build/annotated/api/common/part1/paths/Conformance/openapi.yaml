@@ -1,0 +1,12 @@
+get:
+  summary: information about standards that this API conforms to
+  description: A list of all conformance classes, specified in a standard, that the
+    server conforms to.
+  operationId: getConformanceClasses
+  tags:
+  - ConformanceDeclaration
+  responses:
+    200:
+      $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/ConformanceDeclaration/schema.yaml
+    default:
+      $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/Exception/schema.yaml

@@ -1,0 +1,37 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.part1.responses.LandingPage",
+  "name": "LandingPage response",
+  "abstract": "The response for the OGC API landing page resource.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-16T00:00:00Z",
+  "itemClass": "response",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "response"
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.common.part1.schemas.landingPage"
+  ],
+  "dateOfLastChange": "2026-09-16",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/LandingPage/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/LandingPage/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/responses/LandingPage/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/responses/LandingPage/",
+  "validationPassed": true,
+  "annotatedSchema": "description: The landing page provides links to the API definition (link relations\n  `service-desc` and `service-doc`), the Conformance declaration (path `/conformance`,\n  link relation `http://www.opengis.net/def/rel/ogc/1.0/conformance`), and to other\n  resources.\ncontent:\n  application/json:\n    schema:\n      $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/landingPage/schema.yaml\n  text/html:\n    schema:\n      type: string\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-common",
+  "gitPath": "_sources/part1/responses/LandingPage"
+}

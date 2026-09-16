@@ -1,0 +1,13 @@
+get:
+  summary: landing page of this API
+  description: "The landing page provides links to the:\n  * API Definition (no fixed
+    path, link relations `service-desc` or `service-doc`),\n  * Conformance declaration
+    (path `/conformance`),\n  * and other resources exposed through the API."
+  operationId: getLandingPage
+  tags:
+  - Capabilities
+  responses:
+    200:
+      $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/LandingPage/schema.yaml
+    default:
+      $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/Exception/schema.yaml

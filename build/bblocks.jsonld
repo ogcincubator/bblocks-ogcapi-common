@@ -1,0 +1,1283 @@
+{
+  "@context": [
+    {
+      "@base": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined"
+    },
+    {
+      "bblocks": "https://www.opengis.net/def/bblocks/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "dct": "http://purl.org/dc/terms/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "prof": "http://www.w3.org/ns/dx/prof/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "modspec": "http://www.opengis.net/def/ont/modspec/",
+      "void": "http://rdfs.org/ns/void#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "role": "http://www.w3.org/ns/dx/prof/role/",
+      "shacl": "https://www.w3.org/TR/shacl/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "baseURL": "@id",
+      "name": "rdfs:label",
+      "abstract": {
+        "@id": "dct:abstract",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
+      "description": {
+        "@id": "dct:description",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
+      "status": {
+        "@id": "bblocks:status",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/status/"
+        }
+      },
+      "dateTimeAddition": {
+        "@id": "dct:created",
+        "@type": "xsd:dateTime"
+      },
+      "version": "dct:hasVersion",
+      "dateOfLastChange": {
+        "@id": "dct:modified",
+        "@type": "xsd:date"
+      },
+      "modified": {
+        "@id": "dct:modified",
+        "@type": "xsd:dateTime"
+      },
+      "scope": {
+        "@id": "bblocks:scope",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/bblocks/scope/"
+        }
+      },
+      "sources": {
+        "@id": "dct:source",
+        "@context": {
+          "title": "rdfs:label",
+          "link": "@id"
+        }
+      },
+      "license": {
+        "@id": "dct:license",
+        "@context": {
+          "name": "rdfs:label",
+          "url": {
+            "@id": "rdfs:seeAlso",
+            "@type": "@id"
+          }
+        }
+      },
+      "schema": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "ldContext": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "sourceLdContext": {
+        "@id": "bblocks:hasSourceJsonLdContext",
+        "@type": "@id"
+      },
+      "documentation": {
+        "@id": "dct:description",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:identifier",
+        "@context": {
+          "mediatype": "dct:format",
+          "url": {
+            "@id": "rdfs:isDefinedBy",
+            "@type": "@id"
+          }
+        }
+      },
+      "rdfs:isDefinedBy": {
+        "@type": "@id"
+      },
+      "hasConcepts": {
+        "@reverse": "skos:inScheme"
+      },
+      "dependsOn": {
+        "@id": "bblocks:dependsOn",
+        "@type": "@id"
+      },
+      "isProfileOf": {
+        "@id": "prof:isProfileOf",
+        "@type": "@id"
+      },
+      "tags": "dcat:keyword",
+      "shaclShapes": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "validationReport": {
+        "@id": "bblocks:hasValidationReport",
+        "@type": "@id"
+      },
+      "validationPassed": "bblocks:validationPassed",
+      "imports": {
+        "@id": "owl:imports",
+        "@type": "@id"
+      },
+      "conformanceClasses": {
+        "@id": "modspec:class",
+        "@type": "@id"
+      },
+      "requirementClasses": {
+        "@id": "modspec:requirementsClass",
+        "@type": "@id"
+      },
+      "sparqlEndpoint": {
+        "@id": "void:sparqlEndpoint",
+        "@type": "@id"
+      },
+      "viewerURL": {
+        "@id": "foaf:homepage",
+        "@type": "@id"
+      },
+      "dct:conformsTo": {
+        "@type": "@id"
+      },
+      "prof:hasRole": {
+        "@type": "@id"
+      },
+      "prof:hasArtifact": {
+        "@type": "@id"
+      },
+      "rdfs:seeAlso": {
+        "@type": "@id"
+      },
+      "ontology": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "rdfData": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "links": {
+        "@id": "prof:hasResource",
+        "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld"
+      },
+      "concept": {
+        "@id": "skos:closeMatch",
+        "@type": "@id"
+      },
+      "rdfType": {
+        "@id": "rdfs:subClassOf",
+        "@type": "@id"
+      },
+      "resources": {
+        "@id": "prof:hasResource",
+        "@context": {
+          "role": {
+            "@id": "prof:hasRole",
+            "@type": "@id"
+          },
+          "constraints": "role:constraints",
+          "example": "role:example",
+          "guidance": "role:guidance",
+          "mapping": "role:mapping",
+          "schema": "role:schema",
+          "specification": "role:specification",
+          "validation": "role:validation",
+          "vocabulary": "role:vocabulary",
+          "data": "role:data",
+          "ref": {
+            "@id": "prof:hasArtifact",
+            "@type": "@id"
+          },
+          "format": "dct:format",
+          "conformsTo": {
+            "@id": "dct:conformsTo",
+            "@type": "@id"
+          }
+        }
+      }
+    }
+  ],
+  "name": "Building Blocks - OGC API Common",
+  "abstract": "Building blocks for OGC API - Common.\n",
+  "description": "OGC API - Common is a multi-part standard that documents the set of common practices and \nshared requirements that have emerged from the development of Resource Oriented Architectures \nand Web APIs within the OGC. Standards developers will use these building-blocks in the \nconstruction of other OGC Standards that relate to Web APIs. The result is a modular suite \nof coherent API standards which can be adapted by a system designer for the unique requirements \nof their system. As such, this OGC API Standard serves as the \"OWS Common\" standard for \nresource-oriented OGC APIs. \n\nConsistent with the architecture of the Web, this specification uses a resource architecture \nthat conforms to principles of Representational State Transfer (REST).\n\nThis OGC API Standard establishes a common pattern that is based on OpenAPI. \n",
+  "modified": "2026-09-16T11:20:57.046590",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"e9e9cb5c905d4e569b44b4816a663ec450322f6f",
+      "shortCommitId": "\"e9e9cb",
+      "date": "2026-09-14T10:12:51+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-common",
+  "gitHubRepository": "https://github.com/ogcincubator/bblocks-ogcapi-common/blob/master/",
+  "baseURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/",
+  "viewerURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/",
+  "validationReport": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/tests/report.html",
+  "validationReportJson": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/tests/report.json",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/_cache",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/register.json",
+      "type": "application/json",
+      "title": "This Building Blocks Register in JSON format"
+    },
+    {
+      "rel": "self",
+      "href": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/bblocks.ttl",
+      "type": "text/turtle",
+      "title": "This Building Blocks Register in RDF Turtle format"
+    },
+    {
+      "rel": "self",
+      "href": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/bblocks.jsonld",
+      "type": "application/ld+json",
+      "title": "This Building Blocks Register in JSON-LD format"
+    }
+  ],
+  "@type": [
+    "skos:ConceptScheme",
+    "dcat:Catalog",
+    "bblocks:BBlocksRegister"
+  ],
+  "skos:prefLabel": "Building Blocks - OGC API Common",
+  "hasConcepts": [
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.confClasses",
+      "name": "Conformance Classes schema",
+      "status": "under-development",
+      "dateTimeAddition": "2025-10-23T22:40:00+01:00",
+      "itemClass": "schema",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "abstract": "This building block corresponds to the schema for an OGC API Common confClasses",
+      "shaclShapes": null,
+      "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/remote_cache/",
+      "dateOfLastChange": "2025-10-23",
+      "sourceSchema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/confClasses.yaml",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/confClasses/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/confClasses/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/confClasses/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.confClasses"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.confClasses",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Conformance Classes schema",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.exception",
+      "name": "Exception schema",
+      "status": "under-development",
+      "dateTimeAddition": "2025-10-23T22:40:00+01:00",
+      "itemClass": "schema",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/exception/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/exception/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "abstract": "This building block corresponds to the schema for an OGC API Common exception",
+      "shaclShapes": null,
+      "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/exception/remote_cache/",
+      "dateOfLastChange": "2025-10-23",
+      "sourceSchema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/exception.yaml",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/exception/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/exception/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/exception/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/exception/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.exception"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.exception",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Exception schema",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.link",
+      "name": "Link schema",
+      "status": "under-development",
+      "dateTimeAddition": "2025-10-23T22:40:00+01:00",
+      "itemClass": "schema",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/link/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/link/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "abstract": "This building block corresponds to the schema for an OGC API Common link",
+      "shaclShapes": null,
+      "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/link/remote_cache/",
+      "dateOfLastChange": "2025-10-23",
+      "sourceSchema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/link.yaml",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/link/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/link/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/link/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/link/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.link"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.link",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Link schema",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.queryParamValueBoolean",
+      "name": "Boolean query parameter value",
+      "abstract": "The encoding of a boolean query parameter value: the lowercase strings \"true\" and \"false\".",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "datatype",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core, Requirement /req/core/query-param-value-boolean",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "datatype",
+        "query-parameter"
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-09-16",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueBoolean/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueBoolean/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueBoolean/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueBoolean/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueBoolean/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueBoolean/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.queryParamValueBoolean"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueBoolean",
+      "@type": [
+        "bblocks:Datatype",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Boolean query parameter value",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.queryParamValueDecimal",
+      "name": "Decimal query parameter value",
+      "abstract": "The encoding of a decimal query parameter value: decimal digits separated by a period as a decimal indicator.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "datatype",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core, Requirement /req/core/query-param-value-decimal",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "datatype",
+        "query-parameter"
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-09-16",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueDecimal/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueDecimal/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueDecimal/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueDecimal/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueDecimal/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueDecimal/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.queryParamValueDecimal"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueDecimal",
+      "@type": [
+        "bblocks:Datatype",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Decimal query parameter value",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.queryParamValueDouble",
+      "name": "Double query parameter value",
+      "abstract": "The encoding of a double (exponential-format) query parameter value: a decimal mantissa followed, optionally, by an integer exponent.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "datatype",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core, Requirement /req/core/query-param-value-double",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "datatype",
+        "query-parameter"
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-09-16",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueDouble/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueDouble/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueDouble/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueDouble/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueDouble/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueDouble/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.queryParamValueDouble"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueDouble",
+      "@type": [
+        "bblocks:Datatype",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Double query parameter value",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.queryParamValueInteger",
+      "name": "Integer query parameter value",
+      "abstract": "The encoding of an integer query parameter value: a finite-length sequence of decimal digits with an optional leading negative sign.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "datatype",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core, Requirement /req/core/query-param-value-integer",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "datatype",
+        "query-parameter"
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-09-16",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueInteger/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueInteger/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueInteger/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueInteger/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueInteger/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueInteger/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.queryParamValueInteger"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueInteger",
+      "@type": [
+        "bblocks:Datatype",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Integer query parameter value",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.queryParamValueList",
+      "name": "Delimited list query parameter value",
+      "abstract": "The encoding of a query parameter value that is a delimited list of values, one of the two ways OGC API - Common allows passing more than one value for a parameter.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "datatype",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core, Requirements /req/core/query-param-list-delimiter, /req/core/query-param-list-escape, /req/core/query-param-list-empty",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "datatype",
+        "query-parameter"
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-09-16",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueList/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueList/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueList/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueList/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueList/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueList/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.queryParamValueList"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueList",
+      "@type": [
+        "bblocks:Datatype",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Delimited list query parameter value",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.responses.ConformanceDeclaration",
+      "name": "ConformanceDeclaration response",
+      "abstract": "The response for the OGC API conformance declaration resource.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "response",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "response"
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.part1.schemas.confClasses"
+      ],
+      "dateOfLastChange": "2026-09-16",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/ConformanceDeclaration/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/ConformanceDeclaration/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/responses/ConformanceDeclaration/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/responses/ConformanceDeclaration/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/responses/ConformanceDeclaration/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/responses/ConformanceDeclaration/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.responses.ConformanceDeclaration"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.responses.ConformanceDeclaration",
+      "@type": [
+        "bblocks:Response",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "ConformanceDeclaration response",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.responses.Exception",
+      "name": "Exception response",
+      "abstract": "An RFC 7807 \"Problem Details\" error response, as recommended by OGC API - Common for any error situation.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "response",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "response"
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.part1.schemas.exception"
+      ],
+      "dateOfLastChange": "2026-09-16",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/Exception/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/Exception/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/responses/Exception/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/responses/Exception/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/responses/Exception/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/responses/Exception/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.responses.Exception"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.responses.Exception",
+      "@type": [
+        "bblocks:Response",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Exception response",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.schemas.landingPage",
+      "name": "Landing Page schema",
+      "status": "under-development",
+      "dateTimeAddition": "2025-10-23T22:40:00+01:00",
+      "itemClass": "schema",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common"
+      ],
+      "abstract": "This building block corresponds to the schema for an OGC API Common landingPage",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.part1.schemas.link"
+      ],
+      "dateOfLastChange": "2025-10-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/landingPage/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/landingPage/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/landingPage/schema.yaml",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/landingPage/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/landingPage/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/schemas/landingPage/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/schemas/landingPage/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.schemas.landingPage"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.schemas.landingPage",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Landing Page schema",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.paths.Conformance",
+      "name": "Conformance path",
+      "abstract": "The conformance declaration (\"{root}/conformance\"), listing the conformance classes implemented by this API.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "path",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "path"
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.part1.responses.ConformanceDeclaration",
+        "bblocks://ogc.api.common.part1.responses.Exception"
+      ],
+      "dateOfLastChange": "2026-09-16",
+      "sourceOpenAPIDocument": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/paths/Conformance/openapi.yaml",
+      "openAPIDocument": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/paths/Conformance/openapi.yaml",
+        "prof:hasRole": "role:schema",
+        "dct:format": "application/yaml",
+        "dct:conformsTo": "https://spec.openapis.org/oas/v3.1.0.html"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/paths/Conformance/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/paths/Conformance/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/paths/Conformance/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.paths.Conformance"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.paths.Conformance",
+      "@type": [
+        "bblocks:Path",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Conformance path",
+      "ldContext": null,
+      "schema": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.responses.LandingPage",
+      "name": "LandingPage response",
+      "abstract": "The response for the OGC API landing page resource.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "response",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "response"
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.part1.schemas.landingPage"
+      ],
+      "dateOfLastChange": "2026-09-16",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/LandingPage/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/LandingPage/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/responses/LandingPage/schema.yaml",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/responses/LandingPage/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/responses/LandingPage/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/responses/LandingPage/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.responses.LandingPage"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.responses.LandingPage",
+      "@type": [
+        "bblocks:Response",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "LandingPage response",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.paths.LandingPage",
+      "name": "LandingPage path",
+      "abstract": "The OGC API landing page (\"{root}/\"), the single starting point for discovering the resources exposed by the API.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "path",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "path"
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.part1.responses.LandingPage",
+        "bblocks://ogc.api.common.part1.responses.Exception"
+      ],
+      "dateOfLastChange": "2026-09-16",
+      "sourceOpenAPIDocument": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/paths/LandingPage/openapi.yaml",
+      "openAPIDocument": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/paths/LandingPage/openapi.yaml",
+        "prof:hasRole": "role:schema",
+        "dct:format": "application/yaml",
+        "dct:conformsTo": "https://spec.openapis.org/oas/v3.1.0.html"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/paths/LandingPage/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/markdown/api/common/part1/paths/LandingPage/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/generateddocs/json-full/api/common/part1/paths/LandingPage/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/bblock/ogc.api.common.part1.paths.LandingPage"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.paths.LandingPage",
+      "@type": [
+        "bblocks:Path",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "LandingPage path",
+      "ldContext": null,
+      "schema": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/"
+      }
+    }
+  ],
+  "skos:hasTopConcept": [
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.confClasses"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.exception"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.link"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueBoolean"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueDecimal"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueDouble"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueInteger"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.queryParamValueList"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.responses.ConformanceDeclaration"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.responses.Exception"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.schemas.landingPage"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.paths.Conformance"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.responses.LandingPage"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.paths.LandingPage"
+    }
+  ]
+}

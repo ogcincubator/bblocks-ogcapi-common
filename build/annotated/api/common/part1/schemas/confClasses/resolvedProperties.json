@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["conformsTo"],"required":true,"schema_type":"array","sources":["bblocks://ogc.api.common.part1.schemas.confClasses"]}]}

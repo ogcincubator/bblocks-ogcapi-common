@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Decimal query parameter value",
+  "description": "Decimal values SHALL be represented by a finite-length sequence of decimal digits separated by a period as a decimal indicator. An optional leading negative (\"-\") sign is allowed (positive, \"+\", is assumed if omitted). Leading and trailing zeroes are optional, and if the fractional part is zero, the period and following zero(es) can be omitted.",
+  "type": "number"
+}

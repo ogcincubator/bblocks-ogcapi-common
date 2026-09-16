@@ -1,0 +1,206 @@
+{
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "result": true
+  },
+  "bblocks": {
+    "ogc.api.common.part1.schemas.confClasses": {
+      "title": "Validation report for ogc.api.common.part1.schemas.confClasses - Conformance Classes schema",
+      "bblockName": "Conformance Classes schema",
+      "bblockId": "ogc.api.common.part1.schemas.confClasses",
+      "generated": "2026-09-16T11:21:02.097754+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.schemas.exception": {
+      "title": "Validation report for ogc.api.common.part1.schemas.exception - Exception schema",
+      "bblockName": "Exception schema",
+      "bblockId": "ogc.api.common.part1.schemas.exception",
+      "generated": "2026-09-16T11:21:02.103777+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.schemas.link": {
+      "title": "Validation report for ogc.api.common.part1.schemas.link - Link schema",
+      "bblockName": "Link schema",
+      "bblockId": "ogc.api.common.part1.schemas.link",
+      "generated": "2026-09-16T11:21:02.110254+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.schemas.queryParamValueBoolean": {
+      "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueBoolean - Boolean query parameter value",
+      "bblockName": "Boolean query parameter value",
+      "bblockId": "ogc.api.common.part1.schemas.queryParamValueBoolean",
+      "generated": "2026-09-16T11:21:02.114849+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.schemas.queryParamValueDecimal": {
+      "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueDecimal - Decimal query parameter value",
+      "bblockName": "Decimal query parameter value",
+      "bblockId": "ogc.api.common.part1.schemas.queryParamValueDecimal",
+      "generated": "2026-09-16T11:21:02.119342+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.schemas.queryParamValueDouble": {
+      "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueDouble - Double query parameter value",
+      "bblockName": "Double query parameter value",
+      "bblockId": "ogc.api.common.part1.schemas.queryParamValueDouble",
+      "generated": "2026-09-16T11:21:02.124006+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.schemas.queryParamValueInteger": {
+      "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueInteger - Integer query parameter value",
+      "bblockName": "Integer query parameter value",
+      "bblockId": "ogc.api.common.part1.schemas.queryParamValueInteger",
+      "generated": "2026-09-16T11:21:02.128526+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.schemas.queryParamValueList": {
+      "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueList - Delimited list query parameter value",
+      "bblockName": "Delimited list query parameter value",
+      "bblockId": "ogc.api.common.part1.schemas.queryParamValueList",
+      "generated": "2026-09-16T11:21:02.133443+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.responses.ConformanceDeclaration": {
+      "title": "Validation report for ogc.api.common.part1.responses.ConformanceDeclaration - ConformanceDeclaration response",
+      "bblockName": "ConformanceDeclaration response",
+      "bblockId": "ogc.api.common.part1.responses.ConformanceDeclaration",
+      "generated": "2026-09-16T11:21:02.138157+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.responses.Exception": {
+      "title": "Validation report for ogc.api.common.part1.responses.Exception - Exception response",
+      "bblockName": "Exception response",
+      "bblockId": "ogc.api.common.part1.responses.Exception",
+      "generated": "2026-09-16T11:21:02.142587+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.schemas.landingPage": {
+      "title": "Validation report for ogc.api.common.part1.schemas.landingPage - Landing Page schema",
+      "bblockName": "Landing Page schema",
+      "bblockId": "ogc.api.common.part1.schemas.landingPage",
+      "generated": "2026-09-16T11:21:02.149117+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.paths.Conformance": {
+      "title": "Validation report for ogc.api.common.part1.paths.Conformance - Conformance path",
+      "bblockName": "Conformance path",
+      "bblockId": "ogc.api.common.part1.paths.Conformance",
+      "generated": "2026-09-16T11:21:02.152527+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.responses.LandingPage": {
+      "title": "Validation report for ogc.api.common.part1.responses.LandingPage - LandingPage response",
+      "bblockName": "LandingPage response",
+      "bblockId": "ogc.api.common.part1.responses.LandingPage",
+      "generated": "2026-09-16T11:21:02.156779+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.part1.paths.LandingPage": {
+      "title": "Validation report for ogc.api.common.part1.paths.LandingPage - LandingPage path",
+      "bblockName": "LandingPage path",
+      "bblockId": "ogc.api.common.part1.paths.LandingPage",
+      "generated": "2026-09-16T11:21:02.159954+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    }
+  }
+}

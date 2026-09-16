@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.common.part1.paths.Conformance - Conformance path",
+  "bblockName": "Conformance path",
+  "bblockId": "ogc.api.common.part1.paths.Conformance",
+  "generated": "2026-09-16T11:21:02.152527+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}
