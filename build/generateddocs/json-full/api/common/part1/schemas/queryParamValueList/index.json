@@ -23,11 +23,11 @@
   "shaclShapes": {},
   "dateOfLastChange": "2026-09-16",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueList/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/queryParamValueList/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueList/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueList/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueList/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/queryParamValueList/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/queryParamValueList/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/queryParamValueList/",
   "validationPassed": true,
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: Delimited list query parameter value\ndescription: 'A parameter value list encoded as a parameter name followed by a delimited\n  list of values (as opposed to repeated name:value pairs for each value in the list).\n  Parameter values containing lists SHOULD specify the delimiter to be used in the\n  API definition; the default list item delimiter SHALL be the comma (\",\"). Any list\n  item value that includes a space or comma SHALL escape that character using the\n  URI encoding rules from IETF RFC 3986. All empty entries SHALL be represented by\n  the empty string - two successive commas indicate an empty item, as does a leading\n  or trailing comma.\n\n  Extend this datatype with a specific \"items\" schema (e.g. via \"allOf\") to constrain\n  the type of the individual list values.'\ntype: array\nitems: {}\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-common",

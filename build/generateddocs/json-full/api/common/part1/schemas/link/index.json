@@ -18,16 +18,16 @@
     "ogcapi-common"
   ],
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/link/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/link/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/schema.json"
   },
   "abstract": "This building block corresponds to the schema for an OGC API Common link",
   "shaclShapes": {},
-  "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/link/remote_cache/",
+  "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/remote_cache/",
   "dateOfLastChange": "2025-10-23",
   "sourceSchema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/link.yaml",
-  "resolvedSchemaProperties": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/link/resolvedProperties.json",
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/_sources/part1/schemas/link/",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/link/",
   "validationPassed": true,
   "annotatedSchema": "type: object\nrequired:\n- href\n- rel\nproperties:\n  href:\n    type: string\n    description: Supplies the URI to a remote resource (or resource fragment).\n    example: http://data.example.com/buildings/123\n  rel:\n    type: string\n    description: The type or semantics of the relation.\n    example: alternate\n  type:\n    type: string\n    description: A hint indicating what the media type of the result of dereferencing\n      the link should be.\n    example: application/geo+json\n  hreflang:\n    type: string\n    description: A hint indicating what the language of the result of dereferencing\n      the link should be.\n    example: en\n  title:\n    type: string\n    description: Used to label the destination of a link such that it can be used\n      as a human-readable identifier.\n    example: Trierer Strasse 70, 53115 Bonn\n  length:\n    type: integer\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-ogcapi-common",

@@ -6,7 +6,7 @@ description: 'The URIs of all conformance classes supported by the server.
 content:
   application/json:
     schema:
-      $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/confClasses/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/confClasses/schema.yaml
     example:
       conformsTo:
       - http://www.opengis.net/spec/ogcapi-common-1/1.0/conf/core

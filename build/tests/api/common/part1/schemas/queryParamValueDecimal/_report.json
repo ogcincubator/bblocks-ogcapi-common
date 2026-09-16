@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.common.part1.schemas.queryParamValueDecimal - Decimal query parameter value",
   "bblockName": "Decimal query parameter value",
   "bblockId": "ogc.api.common.part1.schemas.queryParamValueDecimal",
-  "generated": "2026-09-16T11:21:02.119342+00:00",
+  "generated": "2026-09-16T11:26:27.567845+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

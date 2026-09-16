@@ -17,7 +17,7 @@ description: The landing page provides links to the API definition (link relatio
 content:
   application/json:
     schema:
-      $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/landingPage/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/landingPage/schema.yaml
   text/html:
     schema:
       type: string
@@ -26,8 +26,8 @@ content:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/LandingPage/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/LandingPage/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/LandingPage/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/LandingPage/schema.yaml)
 
 ## Sources
 

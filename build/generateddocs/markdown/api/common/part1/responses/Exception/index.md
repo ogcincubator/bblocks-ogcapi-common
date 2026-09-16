@@ -14,7 +14,7 @@ description: An error occurred.
 content:
   application/json:
     schema:
-      $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/schemas/exception/schema.yaml
+      $ref: https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/schema.yaml
   text/html:
     schema:
       type: string
@@ -23,8 +23,8 @@ content:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/Exception/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/bblocks-ogcapi-common/undefined/build/annotated/api/common/part1/responses/Exception/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/Exception/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/Exception/schema.yaml)
 
 ## Sources
 
