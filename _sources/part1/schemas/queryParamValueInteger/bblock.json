@@ -1,0 +1,20 @@
+{
+  "name": "Integer query parameter value",
+  "abstract": "The encoding of an integer query parameter value: a finite-length sequence of decimal digits with an optional leading negative sign.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-16T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core, Requirement /req/core/query-param-value-integer",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "datatype",
+    "query-parameter"
+  ]
+}

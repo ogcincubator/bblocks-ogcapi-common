@@ -1,0 +1,15 @@
+get:
+  summary: landing page of this API
+  description: >-
+    The landing page provides links to the:
+      * API Definition (no fixed path, link relations `service-desc` or `service-doc`),
+      * Conformance declaration (path `/conformance`),
+      * and other resources exposed through the API.
+  operationId: getLandingPage
+  tags:
+    - Capabilities
+  responses:
+    200:
+      $ref: "bblocks://ogc.api.common.part1.responses.LandingPage"
+    default:
+      $ref: "bblocks://ogc.api.common.part1.responses.Exception"

@@ -1,0 +1,19 @@
+{
+  "name": "Exception response",
+  "abstract": "An RFC 7807 \"Problem Details\" error response, as recommended by OGC API - Common for any error situation.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-16T00:00:00Z",
+  "itemClass": "response",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "response"
+  ]
+}

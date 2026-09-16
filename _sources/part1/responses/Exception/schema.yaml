@@ -1,0 +1,8 @@
+description: An error occurred.
+content:
+  application/json:
+    schema:
+      "$ref": "bblocks://ogc.api.common.part1.schemas.exception"
+  text/html:
+    schema:
+      type: string

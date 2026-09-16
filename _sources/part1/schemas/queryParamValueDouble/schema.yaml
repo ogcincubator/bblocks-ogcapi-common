@@ -1,0 +1,13 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: Double query parameter value
+description: >-
+  Double values SHALL be represented by a mantissa followed, optionally, by
+  the character "e", followed by an exponent. The exponent SHALL be an
+  integer. The mantissa SHALL be a decimal number, following the same
+  lexical rules as a decimal query parameter value. If "e" and the exponent
+  are omitted, an exponent value of 0 is assumed.
+
+  Recommendation /rec/core/query-param-value-special: the special values
+  positive and negative infinity and not-a-number SHOULD be represented
+  using the strings "inf", "-inf" and "nan" respectively, where supported.
+type: number

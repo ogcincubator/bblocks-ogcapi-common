@@ -1,0 +1,17 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: Delimited list query parameter value
+description: >-
+  A parameter value list encoded as a parameter name followed by a
+  delimited list of values (as opposed to repeated name:value pairs for
+  each value in the list). Parameter values containing lists SHOULD
+  specify the delimiter to be used in the API definition; the default list
+  item delimiter SHALL be the comma (","). Any list item value that
+  includes a space or comma SHALL escape that character using the URI
+  encoding rules from IETF RFC 3986. All empty entries SHALL be represented
+  by the empty string - two successive commas indicate an empty item, as
+  does a leading or trailing comma.
+
+  Extend this datatype with a specific "items" schema (e.g. via "allOf") to
+  constrain the type of the individual list values.
+type: array
+items: {}

@@ -1,0 +1,20 @@
+{
+  "name": "Delimited list query parameter value",
+  "abstract": "The encoding of a query parameter value that is a delimited list of values, one of the two ways OGC API - Common allows passing more than one value for a parameter.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-16T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core, Requirements /req/core/query-param-list-delimiter, /req/core/query-param-list-escape, /req/core/query-param-list-empty",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "datatype",
+    "query-parameter"
+  ]
+}

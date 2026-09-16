@@ -1,18 +1,27 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: OGC API Common
 
 # Short abstract for this collection (optional)
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  Building blocks for OGC API - Common.
 
 # Description for this collection (optional)
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  OGC API - Common is a multi-part standard that documents the set of common practices and 
+  shared requirements that have emerged from the development of Resource Oriented Architectures 
+  and Web APIs within the OGC. Standards developers will use these building-blocks in the 
+  construction of other OGC Standards that relate to Web APIs. The result is a modular suite 
+  of coherent API standards which can be adapted by a system designer for the unique requirements 
+  of their system. As such, this OGC API Standard serves as the "OWS Common" standard for 
+  resource-oriented OGC APIs. 
+  
+  Consistent with the architecture of the Web, this specification uses a resource architecture 
+  that conforms to principles of Representational State Transfer (REST).
+  
+  This OGC API Standard establishes a common pattern that is based on OpenAPI. 
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: ogc.api.common.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:

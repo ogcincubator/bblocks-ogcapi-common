@@ -1,0 +1,19 @@
+{
+  "name": "LandingPage path",
+  "abstract": "The OGC API landing page (\"{root}/\"), the single starting point for discovering the resources exposed by the API.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-16T00:00:00Z",
+  "itemClass": "path",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "path"
+  ]
+}

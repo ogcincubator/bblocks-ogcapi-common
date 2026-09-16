@@ -1,0 +1,20 @@
+{
+  "name": "Double query parameter value",
+  "abstract": "The encoding of a double (exponential-format) query parameter value: a decimal mantissa followed, optionally, by an integer exponent.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-16T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core, Requirement /req/core/query-param-value-double",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "datatype",
+    "query-parameter"
+  ]
+}

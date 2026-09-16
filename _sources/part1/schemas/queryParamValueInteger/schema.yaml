@@ -1,0 +1,7 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: Integer query parameter value
+description: >-
+  Integer values SHALL be represented by a finite-length sequence of decimal
+  digits with an optional leading negative ("-") sign. Positive values are
+  assumed if the leading sign is omitted.
+type: integer

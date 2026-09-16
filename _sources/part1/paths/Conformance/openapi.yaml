@@ -1,0 +1,13 @@
+get:
+  summary: information about standards that this API conforms to
+  description: >-
+    A list of all conformance classes, specified in a standard, that the
+    server conforms to.
+  operationId: getConformanceClasses
+  tags:
+    - ConformanceDeclaration
+  responses:
+    200:
+      $ref: "bblocks://ogc.api.common.part1.responses.ConformanceDeclaration"
+    default:
+      $ref: "bblocks://ogc.api.common.part1.responses.Exception"

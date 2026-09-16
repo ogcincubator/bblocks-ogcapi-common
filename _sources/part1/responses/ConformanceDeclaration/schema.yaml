@@ -1,0 +1,16 @@
+description: >-
+  The URIs of all conformance classes supported by the server.
+
+  To support "generic" clients that want to access multiple OGC API
+  implementations - and not "just" a specific API / server, the server
+  declares the conformance classes it implements and conforms to.
+content:
+  application/json:
+    schema:
+      "$ref": "bblocks://ogc.api.common.part1.schemas.confClasses"
+    example:
+      conformsTo:
+        - "http://www.opengis.net/spec/ogcapi-common-1/1.0/conf/core"
+  text/html:
+    schema:
+      type: string

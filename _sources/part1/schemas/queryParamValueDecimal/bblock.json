@@ -1,0 +1,20 @@
+{
+  "name": "Decimal query parameter value",
+  "abstract": "The encoding of a decimal query parameter value: decimal digits separated by a period as a decimal indicator.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-16T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core, Requirement /req/core/query-param-value-decimal",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "datatype",
+    "query-parameter"
+  ]
+}
