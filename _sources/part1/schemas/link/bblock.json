@@ -15,5 +15,8 @@
     "ogcapi-common"
   ],
   "schema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/link.yaml",
-  "abstract": "This building block corresponds to the schema for an OGC API Common link"
+  "abstract": "This building block corresponds to the schema for an OGC API Common link",
+  "seeAlso": [
+    "bblocks://ogc.ogc-utils.json-link"
+  ]
 }

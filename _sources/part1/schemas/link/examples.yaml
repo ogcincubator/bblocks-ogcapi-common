@@ -1,0 +1,13 @@
+examples:
+  - title: A link to an alternate representation
+    content: |
+      A link to a GeoJSON representation of the same resource.
+    snippets:
+      - language: json
+        code: |
+          {
+            "href": "http://data.example.com/buildings/123.json",
+            "rel": "alternate",
+            "type": "application/geo+json",
+            "title": "This document as GeoJSON"
+          }
