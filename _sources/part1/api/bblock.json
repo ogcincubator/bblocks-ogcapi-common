@@ -1,0 +1,18 @@
+{
+  "name": "OGC API - Common",
+  "abstract": "OGC API - Common OpenAPI-based building block, combining the landing page, conformance declaration and API definition resources into a single OpenAPI document.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-16T00:00:00Z",
+  "itemClass": "api",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common"
+  ]
+}
