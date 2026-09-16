@@ -204,7 +204,7 @@
   "name": "Building Blocks - OGC API Common",
   "abstract": "Building blocks for OGC API - Common.\n",
   "description": "OGC API - Common is a multi-part standard that documents the set of common practices and \nshared requirements that have emerged from the development of Resource Oriented Architectures \nand Web APIs within the OGC. Standards developers will use these building-blocks in the \nconstruction of other OGC Standards that relate to Web APIs. The result is a modular suite \nof coherent API standards which can be adapted by a system designer for the unique requirements \nof their system. As such, this OGC API Standard serves as the \"OWS Common\" standard for \nresource-oriented OGC APIs. \n\nConsistent with the architecture of the Web, this specification uses a resource architecture \nthat conforms to principles of Representational State Transfer (REST).\n\nThis OGC API Standard establishes a common pattern that is based on OpenAPI. \n",
-  "modified": "2026-09-16T11:35:10.860774",
+  "modified": "2026-09-16T18:44:39.898424",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"e9e9cb5c905d4e569b44b4816a663ec450322f6f",
@@ -1265,6 +1265,71 @@
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-ogcapi-common/"
       }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.part1.api",
+      "name": "OGC API - Common",
+      "abstract": "OGC API - Common OpenAPI-based building block, combining the landing page, conformance declaration and API definition resources into a single OpenAPI document.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-16T00:00:00Z",
+      "itemClass": "api",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common"
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.part1.paths.Conformance",
+        "bblocks://ogc.api.common.part1.paths.LandingPage",
+        "bblocks://ogc.api.common.part1.responses.Exception"
+      ],
+      "dateOfLastChange": "2026-09-16",
+      "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/api/openapi.yaml",
+      "openAPIDocument": {
+        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/api/openapi.yaml",
+        "prof:hasRole": "role:schema",
+        "dct:format": "application/yaml",
+        "dct:conformsTo": "https://spec.openapis.org/oas/v3.1.0.html"
+      },
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/api/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/api/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/api/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.api"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.part1.api",
+      "@type": [
+        "bblocks:Api",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "OGC API - Common",
+      "ldContext": null,
+      "schema": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-ogcapi-common/"
+      }
     }
   ],
   "skos:hasTopConcept": [
@@ -1309,6 +1374,9 @@
     },
     {
       "@id": "bblocks://ogc.api.common.part1.paths.LandingPage"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.part1.api"
     }
   ]
 }

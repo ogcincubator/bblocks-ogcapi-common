@@ -1,0 +1,62 @@
+openapi: 3.1.0
+info:
+  title: 'Building Blocks specified in OGC API - Common - Part 1: Core'
+  description: 'Common components used in the
+
+    [OGC standard "OGC API - Common - Part 1: Core"](http://docs.opengeospatial.org/is/19-072/19-072.html).
+
+
+    OGC API - Common - Part 1: Core 1.0 is an OGC Standard.
+
+    Copyright (c) 2021 Open Geospatial Consortium.
+
+    To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
+    .
+
+
+    This document is also available on
+
+    [OGC](http://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/ogcapi-common-1.yaml).'
+  version: 1.0.0
+  contact:
+    name: Open Geospatial Consortium
+    email: standards-team@ogc.org
+  license:
+    name: OGC License
+    url: http://www.opengeospatial.org/legal/
+paths:
+  /:
+    $ref: https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/paths/LandingPage/openapi.yaml
+  /conformance:
+    $ref: https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/paths/Conformance/openapi.yaml
+  /api:
+    get:
+      description: This document
+      parameters:
+      - $ref: '#/components/parameters/f'
+      responses:
+        '200':
+          description: General Success response.
+        '400':
+          $ref: https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/Exception/schema.yaml
+        default:
+          $ref: https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/Exception/schema.yaml
+      summary: This document
+      tags:
+      - server
+components:
+  parameters:
+    f:
+      description: The optional f parameter indicates the output format that the server
+        shall provide as part of the response document.  The default format is JSON.
+      explode: false
+      in: query
+      name: f
+      required: false
+      schema:
+        default: json
+        enum:
+        - json
+        - html
+        type: string
+      style: form

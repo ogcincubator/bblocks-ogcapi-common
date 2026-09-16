@@ -1,5 +1,5 @@
 Validation report for ogc.api.common.part1.schemas.exception - Exception schema
-Generated 2026-09-16T11:35:16.574721+00:00
+Generated 2026-09-16T18:44:45.943341+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

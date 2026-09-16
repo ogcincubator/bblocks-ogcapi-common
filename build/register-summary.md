@@ -103,3 +103,9 @@ The response for the OGC API landing page resource.
 
 The OGC API landing page ("{root}/"), the single starting point for discovering the resources exposed by the API.
 
+### `ogc.api.common.part1.api` — OGC API - Common
+
+**Type:** api
+
+OGC API - Common OpenAPI-based building block, combining the landing page, conformance declaration and API definition resources into a single OpenAPI document.
+
