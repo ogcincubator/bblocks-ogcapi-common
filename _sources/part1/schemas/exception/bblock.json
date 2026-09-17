@@ -14,6 +14,7 @@
   "tags": [
     "ogcapi-common"
   ],
+  "group": "Schemas",
   "schema": "https://schemas.opengis.net/ogcapi/common/part1/1.0/openapi/schemas/exception.yaml",
   "abstract": "This building block corresponds to the schema for an OGC API Common exception"
 }
