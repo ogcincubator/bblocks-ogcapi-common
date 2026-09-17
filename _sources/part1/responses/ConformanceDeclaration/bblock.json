@@ -15,5 +15,6 @@
   "tags": [
     "ogcapi-common",
     "response"
-  ]
+  ],
+  "group": "Responses"
 }

@@ -14,5 +14,6 @@
   "tags": [
     "ogcapi-common"
   ],
+  "group": "Schemas",
   "abstract": "This building block corresponds to the schema for an OGC API Common landingPage"
 }
