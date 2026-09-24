@@ -20,9 +20,9 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.common.part1.paths.Conformance",
+    "ogc.api.common.part1.responses.Exception",
     "ogc.api.common.part1.paths.LandingPage",
-    "ogc.api.common.part1.responses.Exception"
+    "ogc.api.common.part1.paths.Conformance"
   ],
   "dateOfLastChange": "2026-09-16",
   "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/api/openapi.yaml",

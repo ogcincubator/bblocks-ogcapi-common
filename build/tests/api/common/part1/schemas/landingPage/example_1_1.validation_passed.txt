@@ -1,5 +1,5 @@
 Validation report for ogc.api.common.part1.schemas.landingPage - Landing Page schema
-Generated 2026-09-16T18:44:45.995133+00:00
+Generated 2026-09-24T13:34:38.819227+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

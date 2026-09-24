@@ -2,9 +2,8 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/ns/oa#> .
-@prefix ns2: <http://www.iana.org/assignments/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -20,12 +19,12 @@
     rdfs:label "OGC API - Common" ;
     dct:abstract "OGC API - Common OpenAPI-based building block, combining the landing page, conformance declaration and API definition resources into a single OpenAPI document."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/api/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.api> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/api/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/api/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/api/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -46,12 +45,12 @@
     rdfs:label "Boolean query parameter value" ;
     dct:abstract "The encoding of a boolean query parameter value: the lowercase strings \"true\" and \"false\"."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueBoolean/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.queryParamValueBoolean> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueBoolean/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueBoolean/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueBoolean/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -62,12 +61,12 @@
         "ogcapi-common",
         "query-parameter" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueBoolean/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueBoolean/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueBoolean/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -79,12 +78,12 @@
     rdfs:label "Decimal query parameter value" ;
     dct:abstract "The encoding of a decimal query parameter value: decimal digits separated by a period as a decimal indicator."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.queryParamValueDecimal> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueDecimal/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueDecimal/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueDecimal/index.json> ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.queryParamValueDecimal> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -95,12 +94,12 @@
         "ogcapi-common",
         "query-parameter" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueDecimal/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueDecimal/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueDecimal/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -112,12 +111,12 @@
     rdfs:label "Double query parameter value" ;
     dct:abstract "The encoding of a double (exponential-format) query parameter value: a decimal mantissa followed, optionally, by an integer exponent."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueDouble/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.queryParamValueDouble> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueDouble/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueDouble/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueDouble/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -128,12 +127,12 @@
         "ogcapi-common",
         "query-parameter" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueDouble/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueDouble/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueDouble/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -145,12 +144,12 @@
     rdfs:label "Integer query parameter value" ;
     dct:abstract "The encoding of an integer query parameter value: a finite-length sequence of decimal digits with an optional leading negative sign."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueInteger/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueInteger/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.queryParamValueInteger> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueInteger/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.queryParamValueInteger> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -161,12 +160,12 @@
         "ogcapi-common",
         "query-parameter" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueInteger/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueInteger/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/queryParamValueInteger/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -180,10 +179,10 @@
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/queryParamValueList/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueList/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.queryParamValueList> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.queryParamValueList> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/queryParamValueList/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -206,18 +205,18 @@
 
 <https://ogcincubator.github.io/bblocks-ogcapi-common/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Nd9df28b34e34403d81fe30d7e7d13947 ;
+    prov:wasAttributedTo _:N6c9e9e7d1bf54b52a8b3b7e4147fc9bd ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-09-16T18:44:46.276805"^^xsd:dateTime ;
-            prov:startedAtTime "2026-09-16T18:44:46.040169"^^xsd:dateTime ;
+            prov:endedAtTime "2026-09-24T13:34:39.111536"^^xsd:dateTime ;
+            prov:startedAtTime "2026-09-24T13:34:38.862735"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-                [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:3fafcd26181c11426f14acfc7f6be515f9dcd50e" ;
-                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-ogcapi-common/build/register.json> ] ;
-            prov:wasAssociatedWith _:Nd9df28b34e34403d81fe30d7e7d13947 ] .
+                    dct:hasVersion "git:0f35e33a93acbfe2b5c69124573e346adc9e18f9" ;
+                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-ogcapi-common/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:N6c9e9e7d1bf54b52a8b3b7e4147fc9bd ] .
 
 <bblocks://ogc.api.common.part1.paths.Conformance> a skos:Concept,
         dcat:Dataset,
@@ -226,12 +225,12 @@
     rdfs:label "Conformance path" ;
     dct:abstract "The conformance declaration (\"{root}/conformance\"), listing the conformance classes implemented by this API."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/paths/Conformance/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/paths/Conformance/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.paths.Conformance> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/paths/Conformance/index.md> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/paths/Conformance/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -254,10 +253,10 @@
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.paths.LandingPage> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/paths/LandingPage/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/paths/LandingPage/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/paths/LandingPage/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/paths/LandingPage/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -278,12 +277,12 @@
     rdfs:label "ConformanceDeclaration response" ;
     dct:abstract "The response for the OGC API conformance declaration resource."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/responses/ConformanceDeclaration/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/responses/ConformanceDeclaration/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.responses.ConformanceDeclaration> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/responses/ConformanceDeclaration/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.responses.ConformanceDeclaration> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -293,12 +292,12 @@
     dcat:keyword "ogcapi-common",
         "response" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/ConformanceDeclaration/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/ConformanceDeclaration/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/ConformanceDeclaration/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.api.common.part1.schemas.confClasses> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -311,12 +310,12 @@
     rdfs:label "LandingPage response" ;
     dct:abstract "The response for the OGC API landing page resource."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/responses/LandingPage/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/responses/LandingPage/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.responses.LandingPage> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/responses/LandingPage/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.responses.LandingPage> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -326,12 +325,12 @@
     dcat:keyword "ogcapi-common",
         "response" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/LandingPage/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/LandingPage/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/responses/LandingPage/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.api.common.part1.schemas.landingPage> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -344,12 +343,12 @@
     rdfs:label "Conformance Classes schema" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Common confClasses"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-10-23T22:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/confClasses/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/confClasses/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.confClasses> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/confClasses/index.md> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/confClasses/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-10-23"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -361,14 +360,14 @@
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/confClasses/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/confClasses/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/confClasses/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/confClasses/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/confClasses/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -380,12 +379,12 @@
     rdfs:label "Exception schema" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Common exception"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-10-23T22:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/exception/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.exception> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/exception/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/exception/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/exception/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-10-23"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -394,17 +393,17 @@
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-ogcapi-common/> ;
     dcat:keyword "ogcapi-common" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/exception/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:mapping ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/exception/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -416,12 +415,12 @@
     rdfs:label "Landing Page schema" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Common landingPage"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-10-23T22:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/landingPage/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/landingPage/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.landingPage> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/landingPage/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.landingPage> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-10-23"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -430,17 +429,17 @@
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-ogcapi-common/> ;
     dcat:keyword "ogcapi-common" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/landingPage/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/landingPage/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/landingPage/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/landingPage/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.api.common.part1.schemas.link> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-ogcapi-common/_sources/part1/schemas/landingPage/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -453,26 +452,27 @@
     rdfs:label "Link schema" ;
     dct:abstract "This building block corresponds to the schema for an OGC API Common link"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-10-23T22:40:00+01:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.link> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/schemas/link/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.schemas.link> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/schemas/link/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-10-23"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    rdfs:seeAlso <bblocks://ogc.ogc-utils.json-link> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-ogcapi-common/> ;
     skos:prefLabel "Link schema" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-ogcapi-common/> ;
     dcat:keyword "ogcapi-common" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-common/build/annotated/api/common/part1/schemas/link/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
@@ -489,12 +489,12 @@
     rdfs:label "Exception response" ;
     dct:abstract "An RFC 7807 \"Problem Details\" error response, as recommended by OGC API - Common for any error situation."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.responses.Exception> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/responses/Exception/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/part1/responses/Exception/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/part1/responses/Exception/index.json> ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.part1.responses.Exception> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
@@ -541,8 +541,7 @@ that conforms to principles of Representational State Transfer (REST).
 
 This OGC API Standard establishes a common pattern that is based on OpenAPI. 
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-09-16T18:44:39.898424"^^xsd:dateTime ;
-    owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
+    dct:modified "2026-09-24T13:34:32.702552"^^xsd:dateTime ;
     skos:hasTopConcept <bblocks://ogc.api.common.part1.api>,
         <bblocks://ogc.api.common.part1.paths.Conformance>,
         <bblocks://ogc.api.common.part1.paths.LandingPage>,
@@ -559,24 +558,24 @@ This OGC API Standard establishes a common pattern that is based on OpenAPI.
         <bblocks://ogc.api.common.part1.schemas.queryParamValueInteger>,
         <bblocks://ogc.api.common.part1.schemas.queryParamValueList> ;
     skos:prefLabel "Building Blocks - OGC API Common" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
-            dct:type "text/turtle" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://ogcincubator.github.io/bblocks-ogcapi-common/build/bblocks.ttl> ],
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://ogcincubator.github.io/bblocks-ogcapi-common/build/register.json> ],
         [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://ogcincubator.github.io/bblocks-ogcapi-common/build/bblocks.jsonld> ],
-        [ rdfs:label "This Building Blocks Register in JSON format" ;
-            dct:type "application/json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://ogcincubator.github.io/bblocks-ogcapi-common/build/register.json> ] ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://ogcincubator.github.io/bblocks-ogcapi-common/build/bblocks.jsonld> ],
+        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://ogcincubator.github.io/bblocks-ogcapi-common/build/bblocks.ttl> ] ;
     foaf:homepage <https://ogcincubator.github.io/bblocks-ogcapi-common/> ;
     bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-ogcapi-common/build/tests/report.html> .
 
-_:Nd9df28b34e34403d81fe30d7e7d13947 a prov:Agent,
+_:N6c9e9e7d1bf54b52a8b3b7e4147fc9bd a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.5.34" ;
+    dct:hasVersion "0.5.35.dev2+g67607e7aa" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
