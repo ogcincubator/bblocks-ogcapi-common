@@ -24,8 +24,10 @@ description: |
 identifier-prefix: ogc.api.common.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
-imports:
-  - default
+# Deliberately empty: no block here depends on OGC Main, and OGC Main imports this register
+# (@ogc/ogcapi-common), so importing it back would create a circular dependency.
+# Must stay explicit - omitting 'imports' falls back to importing OGC Main.
+imports: []
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
 # version
