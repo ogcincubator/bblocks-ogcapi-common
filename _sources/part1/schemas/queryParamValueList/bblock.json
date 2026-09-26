@@ -16,5 +16,6 @@
     "ogcapi-common",
     "datatype",
     "query-parameter"
-  ]
+  ],
+  "group": "Query Parameters"
 }

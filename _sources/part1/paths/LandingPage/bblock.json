@@ -15,5 +15,7 @@
   "tags": [
     "ogcapi-common",
     "path"
-  ]
+  ],
+  "group": "Paths",
+  "highlighted": true
 }

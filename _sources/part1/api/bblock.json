@@ -14,5 +14,7 @@
   ],
   "tags": [
     "ogcapi-common"
-  ]
+  ],
+  "group": "API",
+  "highlighted": true
 }
